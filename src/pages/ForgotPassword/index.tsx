@@ -19,7 +19,6 @@ export const ForgotPassword = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle password reset logic
   };
 
   return (

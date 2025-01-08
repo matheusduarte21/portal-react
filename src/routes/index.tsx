@@ -11,6 +11,10 @@ import { Help } from '../pages/Help';
 import { Profile } from '../pages/Profile';
 import { Statement } from '../pages/Statement';
 import { Prospeccao } from '../pages/Prospeccao';
+import { Financial } from '../pages/Financial';
+import { Users } from '../pages/Users';
+import { Enrichment } from '../pages/Enriquicimento';
+import { EnrichmentHistory } from '../pages/Enriquicimento/EnriquecimentoHistory';
 
 export const AppRoutes = () => {
   return (
@@ -27,6 +31,10 @@ export const AppRoutes = () => {
         <Route path="/help" element={<Help />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/statement" element={<Statement />} />
+        <Route path="/financial" element={<Financial />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/enriquecimento" element={<Enrichment />} />
+        <Route path="/enrichment/history" element={<EnrichmentHistory />} />
       </Route>
     </Routes>
   );

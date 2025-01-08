@@ -7,9 +7,12 @@ import {
   User,
   FileText,
   LogOut,
+  DollarSign,
   Menu,
   TextSearch,
-  UserRoundSearch
+  Search,
+  UserRoundSearch,
+  Users
 } from 'lucide-react';
 import {
   Container,
@@ -55,22 +58,17 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
         
         <NavItem to="/consult">
           <TextSearch size={20} />
-          <span>Consultas</span>
+          <span>Consultar CPF/CNPJ</span>
         </NavItem>
 
         <NavItem to="/prospeccao"> 
           <UserRoundSearch size={20} />
           <span>Prospecção</span>
         </NavItem>
-        
-        <NavItem to="/companies">
-          <Building2 size={20} />
-          <span>Empresas</span>
-        </NavItem>
-        
-        <NavItem to="/help">
-          <HelpCircle size={20} />
-          <span>Ajuda</span>
+
+        <NavItem to="/enriquecimento">
+          <Search size={20} />
+          <span>Enriquecimento</span>
         </NavItem>
         
         <NavItem to="/profile">
@@ -82,6 +80,27 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
           <FileText size={20} />
           <span>Extrato</span>
         </NavItem>
+
+        <NavItem to="/financial">
+          <DollarSign size={20} />
+          <span>Financeiro</span>
+        </NavItem>
+
+        <NavItem to="/users">
+          <Users size={20} />
+          <span>Usuários</span>
+        </NavItem>
+
+        <NavItem to="/companies">
+          <Building2 size={20} />
+          <span>Empresas</span>
+        </NavItem>
+
+        <NavItem to="/help">
+          <HelpCircle size={20} />
+          <span>Ajuda</span>
+        </NavItem>
+
       </Nav>
 
       <Footer>

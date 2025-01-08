@@ -54,11 +54,21 @@ export const Logo = styled.div`
 `;
 
 export const Nav = styled.nav`
+  overflow-y: scroll;
   flex: 1;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+
+  /* Estilizando a barra de rolagem */
+  &::-webkit-scrollbar {
+    width: 5px; /* Largura do scroll */
+  }
+
+  /* Para Firefox */
+  scrollbar-width: thin; /* Alternativas: "auto" ou "none" */
+  scrollbar-color: #888 #f4f4f4; /* Polegar e trilho */
 `;
 
 export const NavItem = styled(NavLink)`

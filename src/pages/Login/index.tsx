@@ -71,7 +71,7 @@ export const Login = () => {
                 />
                 <label htmlFor="remember">Lembrar-me</label>
               </CheckboxContainer>
-              <Link as={RouterLink} to="/recuperar-senha">
+              <Link as={RouterLink} to="/forgot-password">
                 Esqueceu a senha?
               </Link>
             </RememberContainer>
@@ -85,7 +85,7 @@ export const Login = () => {
 
           <Footer>
             Não tem uma conta?{' '}
-            <Link as={RouterLink} to="/cadastro">
+            <Link as={RouterLink} to="/register">
               Cadastre-se
             </Link>
           </Footer>
