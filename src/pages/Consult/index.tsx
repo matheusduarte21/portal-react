@@ -9,6 +9,7 @@ import {
   ErrorMessage,
   SearchButton 
 } from './styles';
+import { ConsultationDetails } from './consultDetails';
 
 
 type DocumentType = 'cpf' | 'cnpj';

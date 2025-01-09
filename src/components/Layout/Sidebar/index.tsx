@@ -61,7 +61,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
           <span>Consultar CPF/CNPJ</span>
         </NavItem>
 
-        <NavItem to="/prospeccao"> 
+        <NavItem to="/prospecting"> 
           <UserRoundSearch size={20} />
           <span>Prospecção</span>
         </NavItem>

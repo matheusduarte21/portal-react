@@ -129,7 +129,7 @@ export const EnrichmentHistory = () => {
               Novo enriquecimento
             </Button>
             <Input
-            label=''
+              label=''
               icon={Search}
               placeholder="Pesquisar..."
               value={searchTerm}

@@ -10,11 +10,12 @@ import { Companies } from '../pages/Companies';
 import { Help } from '../pages/Help';
 import { Profile } from '../pages/Profile';
 import { Statement } from '../pages/Statement';
-import { Prospeccao } from '../pages/Prospeccao';
 import { Financial } from '../pages/Financial';
 import { Users } from '../pages/Users';
 import { Enrichment } from '../pages/Enriquicimento';
 import { EnrichmentHistory } from '../pages/Enriquicimento/EnriquecimentoHistory';
+import { Prospecting } from '../pages/Prospeccao';
+import { ConsultationDetails } from '../pages/Consult/consultDetails';
 
 export const AppRoutes = () => {
   return (
@@ -26,7 +27,7 @@ export const AppRoutes = () => {
       <Route path="/" element={<Layout />}>
         <Route path="/home" element={<Home />} />
         <Route path="/consult" element={<Consult />} />
-        <Route path="/prospeccao" element={<Prospeccao/>} />
+        <Route path="/prospeccao" element={<Prospecting />} />
         <Route path="/companies" element={<Companies />} />
         <Route path="/help" element={<Help />} />
         <Route path="/profile" element={<Profile />} />
@@ -35,6 +36,9 @@ export const AppRoutes = () => {
         <Route path="/users" element={<Users />} />
         <Route path="/enriquecimento" element={<Enrichment />} />
         <Route path="/enrichment/history" element={<EnrichmentHistory />} />
+        <Route path="/prospecting" element={<Prospecting />} />
+        <Route path="/consultation/consumer/:id" element={<ConsultationDetails type="consumer" />} />
+        <Route path="/consultation/company/:id" element={<ConsultationDetails type="company" />} />
       </Route>
     </Routes>
   );

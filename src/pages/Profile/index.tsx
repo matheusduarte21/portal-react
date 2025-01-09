@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Header, Title, Content } from './styles';
+import { ConsultationDetails } from '../Consult/consultDetails';
 
 export const Profile = () => {
   return (
@@ -8,7 +9,7 @@ export const Profile = () => {
         <Title>Perfil</Title>
       </Header>
       <Content>
-        <p>Informações do perfil</p>
+        <ConsultationDetails type="company" />
       </Content>
     </Container>
   );
