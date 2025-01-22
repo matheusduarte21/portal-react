@@ -9,7 +9,6 @@ export const Profile = () => {
         <Title>Perfil</Title>
       </Header>
       <Content>
-        <ConsultationDetails type="company" />
       </Content>
     </Container>
   );

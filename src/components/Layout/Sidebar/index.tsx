@@ -12,6 +12,7 @@ import {
   TextSearch,
   Search,
   UserRoundSearch,
+  CreditCard,
   Users
 } from 'lucide-react';
 import {
@@ -79,6 +80,11 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onToggle }) => {
         <NavItem to="/statement">
           <FileText size={20} />
           <span>Extrato</span>
+        </NavItem>
+
+        <NavItem to="/CreditCard">
+          <CreditCard size={20} />
+          <span>Créditos</span>
         </NavItem>
 
         <NavItem to="/financial">

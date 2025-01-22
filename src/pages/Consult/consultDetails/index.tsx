@@ -66,7 +66,7 @@ export const ConsultationDetails: React.FC<ConsultationDetailsProps> = ({ type }
               <Download size={16} />
               Exportar
             </Button>
-            <Button>Nova consulta</Button>
+            <Button onClick={() => window.history.back()}>Nova consulta</Button>
           </HeaderActions>
         </HeaderContent>
       </Header>

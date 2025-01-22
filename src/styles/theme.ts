@@ -1,3 +1,8 @@
+export const colors = {
+  primary: '#5200a0',
+  secondary: '#3cabe0',
+} as const;
+
 export const theme = {
   colors: {
     primary: '#5200a0',

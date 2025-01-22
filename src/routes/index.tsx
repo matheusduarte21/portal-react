@@ -16,6 +16,8 @@ import { Enrichment } from '../pages/Enriquicimento';
 import { EnrichmentHistory } from '../pages/Enriquicimento/EnriquecimentoHistory';
 import { Prospecting } from '../pages/Prospeccao';
 import { ConsultationDetails } from '../pages/Consult/consultDetails';
+import { CreditPurchase } from '../pages/creditCard';
+import { UserForm } from '../pages/Users/UserList/userForm';
 
 export const AppRoutes = () => {
   return (
@@ -28,11 +30,15 @@ export const AppRoutes = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/consult" element={<Consult />} />
         <Route path="/prospeccao" element={<Prospecting />} />
+        <Route path="/prospeccao/details" element={<ConsultationDetails type={'consumer'} />} />
+        <Route path="/consult/details" element={<ConsultationDetails type={'consumer'} />} />
+        <Route path="/users/new" element={<UserForm/>} />/users/new
         <Route path="/companies" element={<Companies />} />
         <Route path="/help" element={<Help />} />
         <Route path="/profile" element={<Profile />} />
-        <Route path="/statement" element={<Statement />} />
+        <Route path="/statement" element={<Statement transactions={[]} balance={0} type={'consultation'} />} />
         <Route path="/financial" element={<Financial />} />
+        <Route path="/CreditCard" element={<CreditPurchase />} />
         <Route path="/users" element={<Users />} />
         <Route path="/enriquecimento" element={<Enrichment />} />
         <Route path="/enrichment/history" element={<EnrichmentHistory />} />

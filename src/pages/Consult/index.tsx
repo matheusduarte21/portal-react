@@ -86,7 +86,9 @@ export const Consult = () => {
       
       <SearchButton type="submit">
         <Search size={20} />
-        Pesquisar
+        <a href="/consult/details">
+                  Seguir
+        </a>
       </SearchButton>
     </Form>
   );

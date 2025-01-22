@@ -210,7 +210,9 @@ export const Prospecting = () => {
                 Voltar
               </Button>
               <Button>
-                Seguir
+                <a href="/prospeccao/details">
+                  Seguir
+                </a>
               </Button>
             </Footer>
           </MainContent>
