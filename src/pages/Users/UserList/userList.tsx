@@ -19,6 +19,7 @@ import {
   Pagination,
   DeleteModal
 } from '../styles';
+import { FilterButton } from '../../Financial/syles';
 
 export const UserList = () => {
   const [showFilters, setShowFilters] = useState(false);
@@ -44,8 +45,8 @@ export const UserList = () => {
       <Header>
         <h1>Usuários</h1>
         <HeaderActions>
-          <Button>
-            <Plus size={20} />
+          <Button className='flex items-center justify-center'>
+            <Plus size={20}  />
             <a href='/users/new'>Novo Usuário</a>
           </Button>
         </HeaderActions>
@@ -61,14 +62,11 @@ export const UserList = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
-            <div className="filter">
-              <Button 
-                variant="secondary"
-                onClick={() => setShowFilters(!showFilters)}
-              >
-                <Filter size={20} />
-                Filtrar
-              </Button>
+            <div className=" h-auto flex justify-center items-end">
+              <FilterButton className='h-11 p-3' onClick={() => setShowFilters(!showFilters)}>
+                            <Filter size={20} />
+                            Filtrar
+              </FilterButton>
 
               {showFilters && (
                 <FilterDropdown>

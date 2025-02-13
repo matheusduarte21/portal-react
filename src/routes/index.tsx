@@ -18,6 +18,10 @@ import { Prospecting } from '../pages/Prospeccao';
 import { ConsultationDetails } from '../pages/Consult/consultDetails';
 import { CreditPurchase } from '../pages/creditCard';
 import { UserForm } from '../pages/Users/UserList/userForm';
+import { ProspectingResults } from '../pages/Prospeccao/ProspectingResults';
+import { ProspectingExtraction } from '../pages/Prospeccao/ProspectingExtraction';
+import { ProspectingPurchase } from '../pages/Prospeccao/ProspectingPurchase';
+import { CompanyForm } from '../pages/Companies/companiesForm';
 
 export const AppRoutes = () => {
   return (
@@ -30,10 +34,13 @@ export const AppRoutes = () => {
         <Route path="/home" element={<Home />} />
         <Route path="/consult" element={<Consult />} />
         <Route path="/prospeccao" element={<Prospecting />} />
-        <Route path="/prospeccao/details" element={<ConsultationDetails type={'consumer'} />} />
+        <Route path="/prospeccao/details" element={<ProspectingResults />} />
+        <Route path="/prospeccao/purchase" element={<ProspectingPurchase/>} />
+        <Route path="/prospeccao/extraction" element={<ProspectingExtraction />} />
         <Route path="/consult/details" element={<ConsultationDetails type={'consumer'} />} />
-        <Route path="/users/new" element={<UserForm/>} />/users/new
+        <Route path="/users/new" element={<UserForm/>} />
         <Route path="/companies" element={<Companies />} />
+        <Route path="/companies/new" element={<CompanyForm />} />
         <Route path="/help" element={<Help />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/statement" element={<Statement transactions={[]} balance={0} type={'consultation'} />} />

@@ -131,7 +131,7 @@ export const Financial: React.FC = () => {
     <Container>
       <Header>
         <h1>FINANCEIRO</h1>
-        <button className="bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition-opacity">
+        <button className="w-2/12 py-2.5 px-4 rounded-lg font-medium transition-all duration-200 focus:ring-2 focus:ring-offset-2 shadow-sm bg-gradient-to-r from-[#5200a0] to-[#3cabe0] hover:from-[#5200a0]/90 hover:to-[#3cabe0]/90 text-white focus:ring-[#3cabe0]/50">
           Comprar Créditos
         </button>
       </Header>
@@ -149,7 +149,7 @@ export const Financial: React.FC = () => {
                 className="pl-10 pr-4 py-2 w-full border-2 border-gray-200 rounded-lg focus:border-primary focus:ring focus:ring-primary/20 transition-colors"
               />
             </div>
-            <FilterButton onClick={() => setShowFilter(!showFilter)}>
+            <FilterButton className='h-11 p-3' onClick={() => setShowFilter(!showFilter)}>
               <Filter size={20} />
               Filtrar
             </FilterButton>
@@ -280,7 +280,7 @@ export const Financial: React.FC = () => {
             {transactions.map((transaction) => (
               <tr key={transaction.id}>
                 <td>{transaction.id}</td>
-                <td>(new Date(transaction.date), 'dd/MM/yyyy')</td>
+                <td>{new Date(transaction.date).toLocaleDateString()}</td>
                 <td>{transaction.description}</td>
                 <td>R$ {transaction.amount.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</td>
                 <td>

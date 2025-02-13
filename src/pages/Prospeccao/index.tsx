@@ -18,8 +18,8 @@ import {
   RegionGrid,
   RegionOption,
   SearchableList,
-  MapContainer,
   Footer,
+  Title,
 } from './styles';
 
 type ProfileType = 'consumer' | 'business';
@@ -63,7 +63,7 @@ export const Prospecting = () => {
   return (
     <Container>
       <Header>
-        <h1>Nova Prospecção</h1>
+        <Title>Nova Prospecção</Title>
       </Header>
 
       <FormContainer>

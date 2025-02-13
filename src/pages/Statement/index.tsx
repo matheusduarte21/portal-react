@@ -45,12 +45,9 @@ export const Statement: React.FC<TransactionTableProps> = () => {
         <div className="max-w-7xl mx-auto">
           <div className="flex justify-between items-center mb-6">
             <h1 className="text-3xl font-bold text-gray-800">EXTRATO</h1>
-            <a
-              href="/CreditCard"
-              className=" text-black px-6 border-black py-2 rounded-lg hover:opacity-90 transition-opacity"
-            >
-              Comprar Créditos
-            </a>
+            <button className="w-2/12 py-2.5 px-4 rounded-lg font-medium transition-all duration-200 focus:ring-2 focus:ring-offset-2 shadow-sm bg-gradient-to-r from-[#5200a0] to-[#3cabe0] hover:from-[#5200a0]/90 hover:to-[#3cabe0]/90 text-white focus:ring-[#3cabe0]/50">
+          Comprar Créditos
+        </button>
           </div>
 
           <div className="bg-white rounded-lg shadow-md overflow-hidden">

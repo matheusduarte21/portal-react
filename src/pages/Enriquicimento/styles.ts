@@ -13,7 +13,7 @@ export const Header = styled.header`
   h1 {
     font-size: 2.5rem;
     font-weight: 800;
-    background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.secondary});
+    background: ${({ theme }) => theme.colors.gray[700]};
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }

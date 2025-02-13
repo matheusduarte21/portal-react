@@ -7,9 +7,9 @@ import {
   TypeButton, 
   Input, 
   ErrorMessage,
-  SearchButton 
+  SearchButton, 
+  Header
 } from './styles';
-import { ConsultationDetails } from './consultDetails';
 
 
 type DocumentType = 'cpf' | 'cnpj';

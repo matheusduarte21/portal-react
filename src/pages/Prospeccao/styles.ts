@@ -8,14 +8,12 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   margin-bottom: 2rem;
+`;
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, ${({ theme }) => theme.colors.primary}, ${({ theme }) => theme.colors.secondary});
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
+export const Title = styled.h1`
+  font-size: 2rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.gray[700]};
 `;
 
 export const FormContainer = styled.div`

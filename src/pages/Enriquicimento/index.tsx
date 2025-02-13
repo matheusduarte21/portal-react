@@ -48,7 +48,7 @@ export const Enrichment = () => {
 
   const handleStepNavigation =  () =>{
     currentStep === 3 ? undefined : handleNext()
-    navigate('/enrichment/history')
+    currentStep === 3 ? navigate('/enrichment/history') :  undefined
   }
 
   return (

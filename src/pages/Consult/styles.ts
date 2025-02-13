@@ -12,6 +12,19 @@ export const Form = styled.form`
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 `;
 
+export const Header = styled.header`
+  margin-bottom: 3rem;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    background: ${({ theme }) => theme.colors.gray[700]};
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
+
 export const TypeSelector = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
